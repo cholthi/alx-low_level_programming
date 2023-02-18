@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+#include <unistd.h>
 /**
 * main - output stringto sdterr using fprintf
 *
@@ -8,6 +10,6 @@
 int main(void)
 {
 char *str = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-fprintf(stderr, str);
+write(2, str, strlen(str));
 return (1);
 }

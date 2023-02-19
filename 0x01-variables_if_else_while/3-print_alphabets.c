@@ -16,11 +16,10 @@ int main(void)
 	{
 		putchar(start);
 	}
-
 	for (start = 'A'; start <= 'Z'; start++)
-        {
+	{
                 putchar(start);
-        }
+	}
 	putchar('\n');
 	return (0);
 }

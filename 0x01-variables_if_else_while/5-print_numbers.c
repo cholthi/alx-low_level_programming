@@ -14,8 +14,8 @@ int main(void)
 
 	for (start = 0; start <= 9; start++)
 	{
-		putchar(start);
+		printf("%d", start);
 	}
-	putchar('\n');
+	printf('\n');
 	return (0);
 }

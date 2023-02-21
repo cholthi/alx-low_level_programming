@@ -10,9 +10,9 @@
 */
 int _isalpha(int c)
 {
-	char alphabet[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-                          "abcdefghijklmnopqrstuvwxyz";
+	char alphabet[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char *letter = alphabet;
+
 	while (*letter != '\0' && *letter != c)
 		++letter;
 	if (*letter)

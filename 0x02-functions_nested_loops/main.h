@@ -14,7 +14,7 @@ int _putchar(char c);
 /**
  * print_alphabet - writes the lowercase aphabet to stdout
  *
- * Return: On success 1.
+ * Return: void
  * writes the lowercase aphabet to stdout.
  */
 void print_alphabet(void);

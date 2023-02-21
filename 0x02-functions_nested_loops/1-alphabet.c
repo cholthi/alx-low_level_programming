@@ -7,7 +7,6 @@
 * Description: Print the lowercase alphabet to sdtout
 * Return: void
 */
-
 void print_alphabet(void)
 {
 	char i;

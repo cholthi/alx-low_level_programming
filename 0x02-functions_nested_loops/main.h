@@ -19,4 +19,12 @@ int _putchar(char c);
  */
 void print_alphabet(void);
 
+
+/**
+ * print_alphabet - writes the lowercase aphabet to stdout 10 times
+ *
+ * Return: void
+ * writes the lowercase aphabet to stdout 10 times.
+void print_alphabet_x10(void)
+
 #endif

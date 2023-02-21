@@ -2,7 +2,7 @@
 /* more headers goes there */
 
 /**
-* print<_alphabet  print the lowercase alphabet to stdout
+* print_alphabet  print the lowercase alphabet to stdout
 *
 * Description: Print the lowercase alphabet to sdtout
 * Return: void

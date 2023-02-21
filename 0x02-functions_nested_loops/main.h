@@ -36,4 +36,12 @@ void print_alphabet_x10(void);
  */
 int _islower(int c);
 
+/**
+ * _islower - checks if the char is an alphabet char
+ *
+ * Return: int bool
+ * checks if the char is an alphabet char.
+ */
+int _isalpha(int c);
+
 #endif

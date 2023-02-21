@@ -11,4 +11,12 @@
  */
 int _putchar(char c);
 
+/**
+ * print_alphabet - writes the lowercase aphabet to stdout
+ *
+ * Return: On success 1.
+ * writes the lowercase aphabet to stdout.
+ */
+void print_alphabet(void);
+
 #endif

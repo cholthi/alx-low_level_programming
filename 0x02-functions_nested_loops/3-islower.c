@@ -2,7 +2,7 @@
 /* more headers goes there */
 
 /**
-* print_alphabet - checks if the argument is a lowercase char
+* _islower - checks if the argument is a lowercase char
 *
 * Description: checks if the argument is a lowercase char
 * Return: int bool

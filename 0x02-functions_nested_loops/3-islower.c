@@ -3,6 +3,7 @@
 
 /**
 * _islower - checks if the argument is a lowercase char
+* @c: char ascii code
 *
 * Description: checks if the argument is a lowercase char
 * Return: int bool

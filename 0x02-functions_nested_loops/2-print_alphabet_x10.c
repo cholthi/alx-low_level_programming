@@ -12,7 +12,7 @@ void print_alphabet_x10(void)
 	char i;
 	int count = 1;
 
-	while(count <= 10)
+	while (count <= 10)
 	{
 		for (i = 'a'; i <= 'z'; i++)
 			_putchar(i);

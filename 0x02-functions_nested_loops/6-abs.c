@@ -12,6 +12,6 @@ int _abs(int n)
 {
 	int mask = (n >> 31);
 
-	return (mask ^ n) - mask;
+	return ((mask ^ n) - mask);
 }
 

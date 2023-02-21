@@ -25,6 +25,7 @@ void print_alphabet(void);
  *
  * Return: void
  * writes the lowercase aphabet to stdout 10 times.
+ */
 void print_alphabet_x10(void)
 
 #endif

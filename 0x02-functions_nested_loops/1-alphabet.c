@@ -2,10 +2,10 @@
 /* more headers goes there */
 
 /**
-* main  print the lowercase alphabet to stdout
+* print<_alphabet  print the lowercase alphabet to stdout
 *
 * Description: Print the lowercase alphabet to sdtout
-* Return: int
+* Return: void
 */
 
 void print_alphabet(void)

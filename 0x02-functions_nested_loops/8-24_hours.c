@@ -7,7 +7,7 @@
 * Description: Print jack bauer day minutes
 * Return: void
 */
-int jack_bauer(void)
+void jack_bauer(void)
 {
 	int hours;
 	int minutes;

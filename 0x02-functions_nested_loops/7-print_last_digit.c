@@ -14,8 +14,14 @@ int print_last_digit(int n)
 	int _absn;
 	int last;
 
-	mask = (n >> 31);
-	_absn = (mask ^ n) - mask;
+	if (n < 0)
+	{
+		_absn = (unsigned int)(n);
+	} else
+	{	
+		mask = (n >> 31);
+		_absn = (mask ^ n) - mask;
+	}
 	last = (_absn % 10);
 	_putchar(last + '0');
 	return (last);

@@ -25,10 +25,14 @@ void times_table(void)
 			} else
 			{
 				_putchar(table + '0');
-				_putchar(' ');
 			}
-			_putchar(',');
-			_putchar(' ');
+
+			if (x != 9)
+				_putchar(',');
+			if (x != 9)
+				_putchar(' ');
+			if (table > 10 && x != 9)
+				_putchar(' ');
 
 		}
 		_putchar('\n');

@@ -31,7 +31,7 @@ void times_table(void)
 				_putchar(',');
 			if (x != 9)
 				_putchar(' ');
-			if (table > 10 && x != 9)
+			if (table < 10 && x != 9)
 				_putchar(' ');
 
 		}

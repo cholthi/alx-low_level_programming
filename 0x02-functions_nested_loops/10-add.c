@@ -31,6 +31,6 @@ void print_digits(long int n)
 	if (n / 10 != 0)
 	{
 		_putchar(n % 10 + '0');
-		print_digits(n / 10);
+		print_digits((n - n % 10) / 10);
 	}
 }

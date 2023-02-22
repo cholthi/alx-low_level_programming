@@ -18,7 +18,7 @@ void times_table(void)
 		for (x = 0; x < 10; x++)
 		{
 			table = y * x;
-			if (table > 10)
+			if (table => 10)
 			{
 				_putchar((table / 10) + '0');
 				_putchar((table % 10) + '0');

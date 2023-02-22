@@ -56,6 +56,6 @@ void times_table(void);
 
 int add(int, int);
 
-void print(long n);
+void print_digits(long n);
 
 #endif

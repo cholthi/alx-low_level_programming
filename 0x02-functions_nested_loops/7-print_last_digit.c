@@ -17,7 +17,7 @@ int print_last_digit(int n)
 
 	if (n == INT_MIN)
 	{
-		_absn = UINT_MAX - ((unsigned int)(n)) + 1U
+		_absn = UINT_MAX - ((unsigned int)(n)) + 1U;
 	} else
 	{	
 		mask = (n >> 31);

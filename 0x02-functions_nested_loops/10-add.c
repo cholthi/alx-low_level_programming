@@ -13,7 +13,7 @@ int add(int a, int b)
 {
 	long int ab;
 
-	ab = a * b;
+	ab = a + b;
 	print_digits(ab);
 	return (ab);
 }

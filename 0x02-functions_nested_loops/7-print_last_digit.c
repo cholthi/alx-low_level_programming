@@ -1,5 +1,4 @@
 #include "main.h"
-#include <limits.h>
 /* more headers goes there */
 
 /**
@@ -15,11 +14,9 @@ int print_last_digit(int n)
 	int _absn;
 	int last;
 
-	if (n == INT_MIN)
-		n = ((unsigned) -(n + 1)) + 1U;
 	mask = (n >> 31);
-        _absn = (mask ^ n) - mask;
-        last = (_absn % 10);
+	_absn = (mask ^ n) - mask;
+	last = (_absn % 10);
 	_putchar(last + '0');
 	return (last);
 }

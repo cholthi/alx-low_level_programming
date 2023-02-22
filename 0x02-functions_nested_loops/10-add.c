@@ -32,12 +32,10 @@ void print_digits(long int n)
 		_putchar('-');
 		n = -n;
 	}
-	if (n == 0)
-		_putchar('0');
 
 	if (n / 10 != 0)
 	{
 		_putchar(n % 10 + '0');
-		print_digits((n - n % 10) / 10);
+		print_digits((n / 10);
 	}
 }

@@ -20,7 +20,7 @@ void print_to_98(int n)
 		{
 			print_digits(i);
 			if (i != 98)
-				_putchar(',');
+				_putchar(', ');
 		}
 	}
 
@@ -29,7 +29,7 @@ void print_to_98(int n)
 		{
 			print_digits(i);
 			if (i != 98)
-				_putchar(',');
+				_putchar(', ');
 		}
 	_putchar('\n');
 }
@@ -41,7 +41,7 @@ void print_to_98(int n)
 * Description: Computes product of two numbers
 * Return: void
 */
-void print_digits(long int n)
+void print_digits(int n)
 {
         if (n < 0)
         {

@@ -3,8 +3,8 @@
 
 /**
 * add - computes sum of two numbers
-* @n: Int number to add
-* @n: number to add
+* @a: Int number to add
+* @b: number to add
 *
 * Description: Computes sum of two numbers
 * Return: int

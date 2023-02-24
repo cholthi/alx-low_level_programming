@@ -2,7 +2,7 @@
 /* more headers goes there */
 
 /**
-* _abs - checks its argument if it is a uppercase character
+* _isupper - checks its argument if it is a uppercase character
 * @c: Int char to check
 *
 * Description: Check argument if uppercase
@@ -10,6 +10,7 @@
 */
 int _isupper(int c)
 {
-	return ((c >= 65 && c <= 90));
+	int isupper = (c >= 65 && c <= 90);
+	return (isupper);
 }
 

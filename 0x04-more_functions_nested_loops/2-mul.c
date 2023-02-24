@@ -11,7 +11,7 @@
 */
 int mul(int a, int b)
 {
-	long int r
+	long int r;
 
 	r = a * b;
 	return (r);

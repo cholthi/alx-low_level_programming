@@ -10,7 +10,6 @@
 */
 int _isupper(int c)
 {
-	int isupper = (c >= 65 && c <= 90);
-	return (isupper);
+	return ((c >= 65 && c <= 90));
 }
 

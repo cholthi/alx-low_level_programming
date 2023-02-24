@@ -3,14 +3,13 @@
 
 /**
 * _abs - checks its argument if it is a uppercase character
-* @n: Int char to check
+* @c: Int char to check
 *
 * Description: Check argument if uppercase
 * Return: int bool
 */
 int _isupper(int c)
 {
-	int isupper = (c >= 65 && c <= 90);
-	return (isupper);
+	return ((c >= 65 && c <= 90));
 }
 

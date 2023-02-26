@@ -23,8 +23,8 @@ void print_diagonal(int n)
 		for (ident = 0; ident < i; ident++)
 			_putchar(' ');
 
-		_putchar('\');
-		_putchar('\\n');
+		_putchar('\\');
+		_putchar('\n');
 		
 	}
 }

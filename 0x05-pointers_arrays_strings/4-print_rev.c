@@ -2,35 +2,24 @@
 /* more headers goes there */
 
 /**
-* print_rev - modify function param using a pointer
-* @n: * int to assign to
+* print_rev - print a string in reverse
+* @s: * char string to print in reverse
 *
-* Description: Check argument if numeric digit
+* Description: print a string in reverse
 * Return: void
 */
 void print_rev(char *s);
 {
-	int length, c;
-	char *begin, *end, temp;
+	int len;
+	int i;
+
+	len = _strlen(s);
+	for (i = len - 1; i >= 0; i--)
+		_putchar(*(s + i));
+
+	_putchar('\n');
+} 
  
-	length = _strlen(string);
- 
-	begin = string;
-	end = string;
- 
-	for ( c = 0 ; c < ( length - 1 ) ; c++ )
-		end++;
- 
-	for ( c = 0 ; c < length/2 ; c++ ) 
-	{        
-		temp = *end;
-		*end = *begin;
-		*begin = temp;
- 
-		begin++;
-		end--;
-	}
-}
 
 /**
 * _strlen - get the length of a string given to it

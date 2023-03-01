@@ -3,7 +3,7 @@
 
 /**
 * _strlen - get the length of a string given to it
-* s: *char string to calculate length in bytes
+* @s: * char string to calculate length in bytes
 *
 * Description: get the length of a string given to it
 * Return: int

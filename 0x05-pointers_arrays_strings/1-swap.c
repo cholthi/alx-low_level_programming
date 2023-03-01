@@ -3,8 +3,8 @@
 
 /**
 * swap_int - function to swap two int pointers
-* @n: *int int t swap
-* @n: *int int to swap
+* @a: *int int t swap
+* @b: *int int to swap
 *
 * Description: function to swap two int pointers
 * Return: void

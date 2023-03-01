@@ -2,19 +2,22 @@
 /* more headers goes there */
 
 /**
-* _strlen - get the length of a string given to it
-* sn: *s char string to calculate length in bytes
+* _strcpy - get the length of a string given to it
+* @dest: *char dest string
+* @src: * char src string
 *
 * Description: get the length of a string given to it
 * Return: int
 */
-int _strlen(char *s);
+char *_strcpy(char *dest, char *src)
 {
-	int len = 0;
+	int i = 0;
+	
+	while ( src[i] != '\0')
+	{
+		*(dest + i) = *src + i;
+	}
 
-	while(*(s + len) != '\0')
-		len++;
-
-	return (len);
+	return (src);
 }
 

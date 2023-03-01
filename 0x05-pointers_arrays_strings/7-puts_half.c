@@ -3,7 +3,7 @@
 
 /**
 * puts_half - get the length of a string given to it
-* str: *s char string to calculate length in bytes
+* @str: *s char string to calculate length in bytes
 *
 * Description: get the length of a string given to it
 * Return: void
@@ -19,7 +19,7 @@ void puts_half(char *str)
 
 	if (len % 2 != 0)
 		n = (len - 1) / 2;
-	for (i = 0; i <= n; i++)
+	for (i = n; i <= len - 1; i++)
 	{
 		if (str[i] != '\0')
 			_putchar(str[i]);

@@ -2,11 +2,11 @@
 /* more headers goes there */
 
 /**
-* _strcpy - get the length of a string given to it
-* dest: *char dest string
-* *src: * char src string
+* _strcpy - copy src string to dest string buffer
+* @dest: *char dest string
+* @src: * char src string
 *
-* Description: get the length of a string given to it
+* Description: copy src string to dest string buer
 * Return: int
 */
 char *_strcpy(char *dest, char *src)

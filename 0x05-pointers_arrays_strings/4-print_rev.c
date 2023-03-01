@@ -18,8 +18,7 @@ void print_rev(char *s)
 		_putchar(*(s + i));
 
 	_putchar('\n');
-} 
- 
+}
 
 /**
 * _strlen - get the length of a string given to it
@@ -32,7 +31,7 @@ int _strlen(char *s)
 {
 	int len = 0;
 
-	while(*(s + len) != '\0')
+	while (*(s + len) != '\0')
 		len++;
 
 	return (len);

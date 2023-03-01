@@ -12,7 +12,7 @@ void rev_string(char *s)
 {
 	int length, c;
 	char *begin, *end, temp;
- 
+
 	length = _strlen(s);
  
 	begin = s;
@@ -43,7 +43,7 @@ int _strlen(char *s)
 {
 	int len = 0;
 
-        while (*(s + len) != '\0')
+	while (*(s + len) != '\0')
 		len++;
 
 	return (len);

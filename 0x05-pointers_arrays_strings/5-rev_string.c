@@ -13,20 +13,20 @@ void rev_string(char *s)
 	int length, c;
 	char *begin, *end, temp;
  
-	length = _strlen(string);
+	length = _strlen(s);
  
-	begin = string;
-	end = string;
- 
+	begin = s;
+	end = s;
+
 	for ( c = 0 ; c < ( length - 1 ) ; c++ )
 		end++;
- 
+
 	for ( c = 0 ; c < length/2 ; c++ ) 
 	{        
 		temp = *end;
 		*end = *begin;
 		*begin = temp;
- 
+
 		begin++;
 		end--;
 	}
@@ -34,18 +34,18 @@ void rev_string(char *s)
 
 /**
 * _strlen - get the length of a string given to it
-* sn: *s char string to calculate length in bytes
+* s: *s char string to calculate length in bytes
 *
 * Description: get the length of a string given to it
 * Return: int
 */
-int _strlen(char *s);
+int _strlen(char *s)
 {
-        int len = 0;
+	int len = 0;
 
-        while(*(s + len) != '\0')
-                len++;
+        while (*(s + len) != '\0')
+		len++;
 
-        return (len);
+	return (len);
 }
 

@@ -3,11 +3,11 @@
 
 /**
 * print_array - get the length of a string given to it
-* a: * int array
-* n: int length to print
+* @a: * int array
+* @n: int length to print
 *
 * Description: get the length of a string given to it
-* Return: int
+* Return: void
 */
 void print_array(int *a, int n)
 {

@@ -28,7 +28,7 @@ void print_rev(char *s)
 * Description: get the length of a string given to it
 * Return: int
 */
-int _strlen(char *s);
+int _strlen(char *s)
 {
         int len = 0;
 

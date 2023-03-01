@@ -8,7 +8,7 @@
 * Description: print a string in reverse
 * Return: void
 */
-void print_rev(char *s);
+void print_rev(char *s)
 {
 	int len;
 	int i;

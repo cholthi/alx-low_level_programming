@@ -29,7 +29,7 @@ char *_strncat(char *dest, char *src, int n)
 		for (j = 0; src[j] != '\0'; j++, len++)
 			dest[len] = src[j];
 	}
-	dest[len] = '\0';
+	/*dest[len] = '\0'; */
 
 	return (dest);
 

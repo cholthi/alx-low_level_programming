@@ -2,7 +2,7 @@
 /* more headers goes there */
 
 /**
-* _stnrcat - concatnates two strings
+* _strncat - concatnates two strings
 * @dest: * char destination string
 * @src: * char source string
 * @n: int number of bytes to copy
@@ -13,23 +13,13 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	int len;
-	int len2;
 	int j;
 
 	len = _strlen(dest);
-	len2 = _strlen(src);
-	if (len2 >= n)
-	{
-		for (j = 0; j < n; j++, len++)
-		{
-			dest[len] = src[j];
-		}
-	} else
-	{
-		for (j = 0; src[j] != '\0'; j++, len++)
-			dest[len] = src[j];
-	}
-	dest[len] = '\0';
+
+	for (j = 0; j < n && src[j] != '\0'; j++)
+		dest[len + j] = src[j];
+	dest[len + j] = '\0';
 
 	return (dest);
 

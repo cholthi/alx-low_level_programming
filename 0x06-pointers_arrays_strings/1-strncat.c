@@ -7,7 +7,7 @@
 * @src: * char source string
 * @n: int number of bytes to copy
 *
-* Description: get the length of a string given to it
+* Description: copy n bytes from src to dest and return dest
 * Return: * char
 */
 char *_strncat(char *dest, char *src, int n)
@@ -16,7 +16,7 @@ char *_strncat(char *dest, char *src, int n)
 	int j;
 
 	len = _strlen(dest);
-	for (j = 0; src[j] < n; j++, len++)
+	for (j = 0; j < n; j++, len++)
 	{
 		dest[len] = src[j];
 	}

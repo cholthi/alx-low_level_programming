@@ -5,7 +5,7 @@
 * _strncat - concatnates two strings
 * @dest: * char destination string
 * @src: * char source string
-* @n: int number of bytes to copy
+* @n: * int number of bytes to copy
 *
 * Description: copy n bytes from src to dest and return dest
 * Return: * char

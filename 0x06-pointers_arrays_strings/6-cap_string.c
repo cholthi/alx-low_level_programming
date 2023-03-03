@@ -3,7 +3,7 @@
 
 /**
 * cap_string - compares two strings lexigraphically
-* @s: * char string one
+* @str: * char string one
 *
 * Description: compares two strings lexigraphically
 * Return:* char
@@ -19,7 +19,7 @@ char *cap_string(char *str)
 	{
 		while (_isspace(str[i]))
 			i++;
-		
+
 		if (str[i] >= 'a' && str[i] <= 'z')
 			str[i] = str[i] - 32;
 
@@ -56,7 +56,9 @@ int _strlen(char *s)
 */
 int _isspace(char c)
 {
-	if (c == ' ' || c == '\n' || c == '\t' || c == '\v' || '\f' || c == '\r')
+	if (c == ' ' || c == '\n' || c == '\t' || c == '.' || c == ',' ||
+			c == ')' || c == '(' || c == '{' || c == '}' ||
+			c == '"' || c == '?' || c == ';')
 		return (1);
 	return (0);
 }

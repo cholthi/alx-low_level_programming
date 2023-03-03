@@ -18,17 +18,13 @@ char *cap_string(char *str)
 	while (i < len)
 	{
 		while (_isspace(str[i]))
-		{
 			i++;
-		}
+		
 		if (str[i] >= 'a' && str[i] <= 'z')
-		{
 			str[i] = str[i] - 32;
-		}
+
 		while (!_isspace(str[i]) && i < len)
-		{
 			i++;
-		}
 	}
 
 	return (str);
@@ -51,6 +47,13 @@ int _strlen(char *s)
 	return (len);
 }
 
+/**
+* _isspace - checks if char is space char
+* @c:  char to check
+*
+* Description: get the length of a string given to it
+* Return: int
+*/
 int _isspace(char c)
 {
 	if (c == ' ' || c == '\n' || c == '\t' || c == '\v' || '\f' || c == '\r')

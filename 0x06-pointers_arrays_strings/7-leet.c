@@ -19,9 +19,11 @@ char *leet(char *str)
 	len = _strlen(str);
 	for (i = 0; i < len; i++)
 	{
-		for (j = 0; i < _strlen(original); j++)
+		for (j = 0; j < _strlen(original); j++)
+		{
 			if (str[i] == original[j])
 				str[i] = leet[j];
+		}
 	}
 
 	return (str);

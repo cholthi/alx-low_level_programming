@@ -10,39 +10,20 @@
 */
 char *leet(char *str)
 {
-	char original[11] = {'a', 'A', 'e', 'E', 't', 'T', 'o', 'O', 'l', 'L', '\0'};
-	char leet[11] = {'4', '4', '3', '3', '7', '7', '0', '0', '1', '1', '\0'};
-	int len;
-	int i;
-	int j;
+	int indx1 = 0, indx2;
+	char leet[8] = {'O', 'L', '?', 'E', 'A', '?', '?', 'T'};
 
-	len = _strlen(str);
-	for (i = 0; i < len; i++)
+	while (str[indx1])
 	{
-		for (j = 0; j < _strlen(original); j++)
+		for (indx2 = 0; indx2 <= 7; indx2++)
 		{
-			if (str[i] == original[j])
-				str[i] = leet[j];
+			if (str[indx1] == leet[indx2] ||
+			    str[indx1] - 32 == leet[indx2])
+				str[indx1] = indx2 + '0';
 		}
+
+		indx1++;
 	}
 
 	return (str);
 }
-
-/**
-* _strlen - get the length of a string given to it
-* @s: * char string to calculate length in bytes
-*
-* Description: get the length of a string given to it
-* Return: int
-*/
-int _strlen(char *s)
-{
-	int len = 0;
-
-	while (*(s + len) != '\0')
-		len++;
-
-	return (len);
-}
-

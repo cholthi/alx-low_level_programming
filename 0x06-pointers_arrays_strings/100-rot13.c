@@ -8,7 +8,7 @@
 * Description: get the length of a string given to it
 * Return: * char
 */
-char *rot13(char *str)
+char *rot13(char *s)
 {
 	int indx1 = 0, indx2;
 	char alphabet[52] = {'A', 'B', 'C', 'D', 'E', 'F',
@@ -30,13 +30,13 @@ char *rot13(char *str)
 			     'd', 'e', 'f', 'g', 'h', 'i',
 			     'j', 'k', 'l', 'm'};
 
-	while (*str != '\0')
+	while (s[indx1])
 	{
 		for (indx2 = 0; indx2 < 52; indx2++)
 		{
-			if (str[indx1] == alphabet[indx2])
+			if (s[indx1] == alphabet[indx2])
 			{
-				str[indx1] = rot13key[indx2];
+				s[indx1] = rot13key[indx2];
 				break;
 			}
 		}
@@ -44,5 +44,5 @@ char *rot13(char *str)
 		indx1++;
 
 	}
-	return (str);
+	return (s);
 }

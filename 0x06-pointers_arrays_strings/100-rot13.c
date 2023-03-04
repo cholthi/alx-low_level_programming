@@ -8,35 +8,41 @@
 * Description: get the length of a string given to it
 * Return: * char
 */
-char *rot13(char *s)
+char *rot13(char *str)
 {
-	while (*s != '\0')
+	int indx1 = 0, indx2;
+	char alphabet[52] = {'A', 'B', 'C', 'D', 'E', 'F',
+			     'G', 'H', 'I', 'J', 'K', 'L',
+			     'M', 'N', 'O', 'P', 'Q', 'R',
+			     'S', 'T', 'U', 'V', 'W', 'X',
+			     'Y', 'Z', 'a', 'b', 'c', 'd',
+			     'e', 'f', 'g', 'h', 'i', 'j',
+			     'k', 'l', 'm', 'n', 'o', 'p',
+			     'q', 'r', 's', 't', 'u', 'v',
+			     'w', 'x', 'y', 'z'};
+	char rot13key[52] = {'N', 'O', 'P', 'Q', 'R', 'S',
+			     'T', 'U', 'V', 'W', 'X', 'Y',
+			     'Z', 'A', 'B', 'C', 'D', 'E',
+			     'F', 'G', 'H', 'I', 'J', 'K',
+			     'L', 'M', 'n', 'o', 'p', 'q',
+			     'r', 's', 't', 'u', 'v', 'w',
+			     'x', 'y', 'z', 'a', 'b', 'c',
+			     'd', 'e', 'f', 'g', 'h', 'i',
+			     'j', 'k', 'l', 'm'};
+
+	while (*str != '\0')
 	{
-		if (_isalpha(*s) && ((*s >= 'a' && *s <= 'm') ||
-			       (*s >= 'A' && *s <= 'M')))
-			*s += 13;
-		else if (_isalpha(*s))
-			*s -= 13;
-		s++;
+		for (indx2 = 0; indx2 < 52; indx2++)
+		{
+			if (str[indx1] == alphabet[indx2])
+			{
+				str[indx1] = rot13key[indx2];
+				break;
+			}
+		}
+
+		indx1++;
+
 	}
-
-	return s;
-}
-/**
-* _isalpha - checks if the char is an alphabet letter
-* @c: Int char to check
-*
-* Description: Checks if the char is an alphabet letter
-* Return: int bool
-*/
-int _isalpha(int c)
-{
-	char alphabet[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
-	char *letter = alphabet;
-
-	while (*letter != '\0' && *letter != c)
-		++letter;
-	if (*letter)
-		return (1);
-	return (0);
+	return (str);
 }

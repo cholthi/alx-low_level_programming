@@ -24,10 +24,10 @@ char *_strpbrk(char *s, char *accept)
 			}
 		}
 		if (n > 0)
-			return (n);
+			return (s);
 		s++;
 	}
-	return (n);
+	return ('\0');
 
 
 }

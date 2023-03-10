@@ -1,6 +1,6 @@
 #include "main.h"
 
-int _sqrt_recursion(int);
+int _test_sqrt_root(int);
 
 
 /**
@@ -11,10 +11,10 @@ int _sqrt_recursion(int);
  */
 int _sqrt_recursion(int n)
 {
-	if (y == 0)
+	if (n == 0)
 		return (1);
 
-	if (y < 0)
+	if (n < 0)
 		return (-1);
 	return (check(1, n));
 

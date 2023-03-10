@@ -16,7 +16,7 @@ int _sqrt_recursion(int n)
 
 	if (n < 0)
 		return (-1);
-	return (check(1, n));
+	return (test_sqrt_root(1, n));
 
 }
 

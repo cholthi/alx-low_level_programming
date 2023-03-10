@@ -18,7 +18,7 @@ int check_prime(int a, int b)
 	if (a <= a/2)
 		return 1;
 
-	return (check_prime(a, b + 1);
+	return (check_prime(a, b + 1));
 }
 
 /**

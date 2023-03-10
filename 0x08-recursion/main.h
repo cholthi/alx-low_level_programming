@@ -6,4 +6,4 @@ int _strlen_recursion(char *s);
 int factorial(int n);
 int _pow_recursion(int x, int y);
 int _sqrt_recursion(int n);
-int _test_sqrt_root(int a, int b);
+int test_sqrt_root(int a, int b);

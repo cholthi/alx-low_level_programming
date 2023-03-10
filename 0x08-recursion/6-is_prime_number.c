@@ -9,11 +9,12 @@
  */
 int check_prime(int a, int b)
 {
-	if (a == 1)
-		return (1);
-	if ((a % b) == 0)
+	if (a < 2 || a % b == 0)
 		return (0);
-	return (check_prime(a, b-1));
+	else if (b > a / 2)
+		return (0);
+
+	return (check_prime(a, b + 1));
 
 }
 
@@ -25,6 +26,6 @@ int check_prime(int a, int b)
  */
 int is_prime_number(int n)
 {
-	return (check_prime(n, n / 2));
+	return (check_prime(n, 2));
 }
 

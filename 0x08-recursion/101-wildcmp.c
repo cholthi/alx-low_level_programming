@@ -19,7 +19,7 @@ int match_wildcard_recursive(char *s1, char *s2, int i, int j)
 		return (match_wildcard_recursive(s1, s2, i, j + 1));
 	if (s2[j] == '*')
 		return (match_wildcard_recursive(s1, s2, i + 1, j) ||
-			       	match_wildcard_recursive(s1, s2, i, j + 1));
+			match_wildcard_recursive(s1, s2, i, j + 1));
 	return (0);
 
 }

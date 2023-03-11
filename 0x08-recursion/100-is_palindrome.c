@@ -9,11 +9,9 @@
  */
 int _strlen(char *str)
 {
-	int slen = 0;
-
-	while (*str != '\0')
-                slen++;
-	return (slen);
+	if (s[0] != '\0')
+		return (1 + _strlen(s + 1));
+	return (0);
 }
 /**
  * rev_recursive - reverses a string

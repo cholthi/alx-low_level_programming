@@ -12,3 +12,5 @@ int check_prime(int a, int b);
 int is_palindrome(char *s);
 int is_pal_recursive(char *s, int i, int j);
 int _strlen(char *);
+int wildcmp(char *s1, char *s2);
+int match_wildcard_recursive(char *, char *, int, int);

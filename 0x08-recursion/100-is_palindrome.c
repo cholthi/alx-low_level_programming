@@ -29,7 +29,7 @@ int is_pal_recursive(char *s, int i, int j)
 		else
 			return (is_pal_recursive(s, i + 1, j - 1));
 	else
-		return (0);	
+		return (0);
 }
 
 /**

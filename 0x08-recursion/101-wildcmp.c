@@ -1,6 +1,7 @@
 #include "main.h"
 
 /**
+ * match_wildcard_recursive - recursively walks ^ comparee two strings
  * @s1: * char string one
  * @s2: * char string two
  * @i: int loop counter var
@@ -17,7 +18,8 @@ int match_wildcard_recursive(char *s1, char *s2, int i, int j)
 	if (s2[j] == '*' && s1[i] == '\0')
 		return (match_wildcard_recursive(s1, s2, i, j + 1));
 	if (s2[j] == '*')
-		return (match_wildcard_recursive(s1, s2, i + 1, j) || match_wildcard_recursive(s1, s2, i, j + 1));
+		return (match_wildcard_recursive(s1, s2, i + 1, j) ||
+			       	match_wildcard_recursive(s1, s2, i, j + 1));
 	return (0);
 
 }

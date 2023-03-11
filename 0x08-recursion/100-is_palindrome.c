@@ -14,10 +14,12 @@ int _strlen(char *str)
 	return (0);
 }
 /**
- * rev_recursive - reverses a string
+ * is_pal_recursive - reverses a string
  * @s: * char string to reverse
+ * @i: int i
+ * @j: int j
  *
- * Return: * char string
+ * Return: int
  */
 int is_pal_recursive(char *s, int i, int j)
 {
@@ -27,13 +29,12 @@ int is_pal_recursive(char *s, int i, int j)
 		else
 			return (is_pal_recursive(s, i + 1, j - 1));
 	else
-		return (0);
-	
+		return (0);	
 }
 
 /**
  * is_palindrome - checks number is palindrome
- * @n: int number
+ * @s:* char
  *
  * Return: int bool
  */

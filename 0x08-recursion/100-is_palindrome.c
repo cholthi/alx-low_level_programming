@@ -9,8 +9,8 @@
  */
 int _strlen(char *str)
 {
-	if (s[0] != '\0')
-		return (1 + _strlen(s + 1));
+	if (str[0] != '\0')
+		return (1 + _strlen(str + 1));
 	return (0);
 }
 /**

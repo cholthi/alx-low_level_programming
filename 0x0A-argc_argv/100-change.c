@@ -116,6 +116,5 @@ int main(int argc, char **argv)
 	}
 	cents += n;
 	print_number(cents);
-	_putchar('\n');
 	return (0);
 }

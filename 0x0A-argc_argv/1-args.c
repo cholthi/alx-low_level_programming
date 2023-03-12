@@ -34,6 +34,7 @@ void print_number(int n)
  */
 int main(int argc, char **argv)
 {
+	argv = argv;
 	print_number(argc);
 	return (0);
 }

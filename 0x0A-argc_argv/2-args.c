@@ -30,6 +30,7 @@ void _puts(char *str)
 int main(int argc, char **argv)
 {
 	int counter;
+
 	if (argc > 0)
 	{
 		for (counter = 0; counter < argc; counter++)

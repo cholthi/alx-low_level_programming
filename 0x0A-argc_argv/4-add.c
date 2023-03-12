@@ -82,10 +82,12 @@ int main(int argc, char **argv)
 	int i = 0;
 	int j;
 	int sum = 0;
+
 	if (argc < 2)
 	{
-		_puts("Error");
-		return (1);
+		_puts("0");
+		_putchar('\n');
+		return (0);
 	}
 	for (j = 1; j < argc; j++)
 	{
@@ -105,6 +107,6 @@ int main(int argc, char **argv)
 		sum += _atoi(argv[i]);
 	}
 	print_number(sum);
-	_putchar('\0');
+	_putchar('\n');
 	return (0);
 }

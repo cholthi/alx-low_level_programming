@@ -87,34 +87,28 @@ int main(int argc, char **argv)
 		_puts("Error");
 		return (1);
 	}
-
 	if (_atoi(argv[1]) < 0)
 	{
 		_putchar('0');
 		_putchar('\n');
 		return (0);
 	}
-
 	n = _atoi(argv[1]);
-	
 	if (n >= 25)
 	{
 		cents += n % 25;
 		n = n / 25;
 	}
-
 	if (n >= 10)
 	{
 		cents += n % 10;
 		n = n / 10;
 	}
-
 	if (n >= 5)
 	{
 		cents += n % 5;
 		n = n / 5;
 	}
-
 	if (n >= 2)
 	{
 		cents += n % 2;
@@ -122,6 +116,6 @@ int main(int argc, char **argv)
 	}
 	cents = n;
 	print_number(cents);
-
+	_putchar('\n');
 	return (0);
 }

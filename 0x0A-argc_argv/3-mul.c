@@ -44,6 +44,33 @@ void print_number(int n)
 }
 
 /**
+ * _atoi - convert a string to an integer.
+ * @s: the string to be comverted.
+ *
+ *Return: The integer value of the comverted string.
+ */
+
+int _atoi(char *s)
+{
+	int sign = 1;
+	unsigned int num = 0;
+
+	do {
+
+		if (*s == '-')
+			sign *= -1;
+
+		else if (*s >= '0' && *s <= '9')
+			num = (num * 10) + (*s - '0');
+
+		else if (num > 0)
+			break;
+	} while (*s++);
+
+	return (num * sign);
+}
+
+/**
  * main - multiples the arguments and print the result
  * @argc: int arguments count
  * @argv: * char[] arrray of strings
@@ -57,7 +84,7 @@ int main(int argc, char **argv)
 		_puts("Error");
 		return (1);
 	}
-	print_number(argv[1] * argv[2]);
+	print_number((_atoi(argv[1]) * _atoi(argv[2])));
 	_putchar('\n');
 
 	return (0);

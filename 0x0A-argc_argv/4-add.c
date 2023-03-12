@@ -80,35 +80,31 @@ int _atoi(char *s)
 int main(int argc, char **argv)
 {
 	int i = 0;
+	int j;
+	int sum = 0;
 	if (argc < 2)
 	{
 		_puts("Error");
 		return (1);
 	}
-	while (argv[1][i] != '\0')
+	for (j = 1; j < argc; j++)
 	{
-
-		if (!(argv[1][i] >= '0' && argv[1][i] <= '9'))
+		while (argv[j][i] != '\0')
 		{
-			_puts("Error");
-			return (1);
-		}
-		i++;
-	}
 
-	i = 0;
-	while (argv[2][i] != '\0')
+			if (!(argv[j][i] >= '0' && argv[j][i] <= '9'))
+			{
+				_puts("Error");
+				return (1);
+			}
+			i++;
+		}
+	}
+	for (i = 1; i < argc; i++)
 	{
-		if (!(argv[2][i] >= '0' && argv[2][i] <= '9'))
-		{
-			_puts("Error");
-			return (1);
-		}
-		i++;
+		sum += _atoi(argv[i]);
 	}
-
-	print_number((_atoi(argv[1]) + _atoi(argv[2])));
-	_putchar('\n');
-
+	print_number(sum);
+	_putchar('\0');
 	return (0);
 }

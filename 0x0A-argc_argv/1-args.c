@@ -35,6 +35,6 @@ void print_number(int n)
 int main(int argc, char **argv)
 {
 	argv = argv;
-	print_number(argc);
+	print_number(argc - 1);
 	return (0);
 }

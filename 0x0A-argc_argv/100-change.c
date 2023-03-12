@@ -114,7 +114,7 @@ int main(int argc, char **argv)
 		cents += n % 2;
 		n = n / 2;
 	}
-	cents = n;
+	cents += n > 1 ? 1 : 0;
 	print_number(cents);
 	_putchar('\n');
 	return (0);

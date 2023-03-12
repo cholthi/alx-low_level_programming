@@ -36,5 +36,6 @@ int main(int argc, char **argv)
 {
 	argv = argv;
 	print_number(argc - 1);
+	_putchar('\n');
 	return (0);
 }

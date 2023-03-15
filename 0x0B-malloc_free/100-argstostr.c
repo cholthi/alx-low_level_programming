@@ -5,7 +5,7 @@
 /**
  * argstostr - concats elements of array to a single string
  * @ac: int number of elems in the array
- * @height: char ** 2d array of chars
+ * @av: char ** 2d array of chars
  *
  * Return: char *
  */

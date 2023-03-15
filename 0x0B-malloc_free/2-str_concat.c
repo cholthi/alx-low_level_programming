@@ -22,6 +22,7 @@ int _strlen(char *s)
  * _strcpy - copy str2 to str1
  * @str1: buffer to copy str2 to
  * @str2: string to copy
+ * @n: index counter
  *
  * Return: char *
  */
@@ -29,6 +30,9 @@ int _strcpy(char *str1, char *str2, int n)
 {
 	unsigned int i = 0;
 	unsigned int j = n;
+
+	if (str2 == NULL)
+		return (0);
 
 	while (str2[i] != '\0')
 	{
@@ -62,15 +66,9 @@ char *str_concat(char *s1, char *s2)
 	if (arr == NULL)
 		return (NULL);
 
-	if (s1 == NULL)
-		j = _strcpy(arr, "", 0);
-	else
-		j = _strcpy(arr, s1, 0);
+	j = _strcpy(arr, s1, 0);
 
-	if (s2 == NULL)
-		j = _strcpy(arr, "", j);
-	else
-		j = _strcpy(arr, s2, j);
+	j = _strcpy(arr, s2, j);
 	arr[j] = '\0';
 
 	return (arr);

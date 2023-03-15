@@ -7,13 +7,13 @@
  * @size: size in bytes to allocate
  * @c: character to initialize the empty bytes
  *
- * Return : * char or NULL
+ * Return: * char or NULL
  */
 char *create_array(unsigned int size, char c)
 {
 	char *arr;
 	unsigned int i;
-	
+
 	if (size <= 0)
 		return (NULL);
 

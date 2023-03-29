@@ -4,7 +4,7 @@
 
 /*
  * Desc: Header file containing functions functions signatures, 
- * 	function pointers declaration
+ *	function pointers declaration
  */
 
 #include <stdlib.h>

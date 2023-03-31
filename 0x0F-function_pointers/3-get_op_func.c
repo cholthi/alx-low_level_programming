@@ -1,5 +1,5 @@
 #include "3-calc.h"
-#include "3-op_functions.c"
+#include <stdlib.h>
 
 /**
  * get_op_func - Returns a pointer to func to do operation
@@ -20,7 +20,7 @@ int (*get_op_func(char *s))(int, int)
     };
     int i = 0;
 
-    while (ops[i].op != NULL && *(ops.op) != *s)
+    while (ops[i].op != NULL && *(ops[i].op) != *s)
 	    i++;
     return (ops[i].f);
 }

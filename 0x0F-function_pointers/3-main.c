@@ -21,14 +21,15 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 
-	if ((*op == '/' || *op == '%') && (argv[1] == 0 || argv[3] == 0))
-	{
-		printf("Error\n");
-		return (100);
-	}
-
 	n1 = atoi(argv[1]);
 	n2 = atoi(argv[3]);
+
+	if ((*op == '/' && n2 == 0) ||
+	    (*op == '%' && n2 == 0))
+	{
+		printf("Error\n");
+		exit(100);
+	}
 
 	op_fn = get_op_func(argv[2]);
 	result = op_fn(n1, n2);

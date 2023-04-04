@@ -7,6 +7,8 @@
  */
 
 #include <stdlib.h>
+
+
 /**
  * struct listint_s - singly linked list
  * @n: integer
@@ -22,4 +24,4 @@ typedef struct listint_s
 
 size_t print_listint(const listint_t *h);
 
-#endif
+#endif /* LISTS_H */

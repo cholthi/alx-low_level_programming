@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * add_nodeint - add node at the beginning of a linked list
- * @h: First node of the linked list or head node
+ * @head: First node of the linked list or head node
  * @n: int node value
  *
  * Return: listint_t the new node

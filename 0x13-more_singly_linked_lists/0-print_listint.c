@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include "lists.h"
+#include <stdio.h>
 /**
  * print_listint - Prints nodes of a linked list
  * @h: First node of the linked list or head node
@@ -20,3 +20,4 @@ size_t print_listint(const listint_t *h)
 
 	return (len);
 }
+

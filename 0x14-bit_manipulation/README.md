@@ -1,1 +1,1 @@
-Bitwise manipulation
+Bitwise iperations and manipulation

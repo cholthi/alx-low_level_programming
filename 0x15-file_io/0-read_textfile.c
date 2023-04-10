@@ -1,5 +1,5 @@
 #include "main.h"
-#include <fcntl.h>
+#include <stdlib.h>
 
 
 /**
@@ -27,7 +27,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (filename != NULL)
 	{
-		r_sz = read(fd, buf, letters)
+		r_sz = read(fd, buf, letters);
 		w_sz = write(STDOUT_FILENO, buf, r_sz);
 		if (w_sz != r_sz)
 			return (0);

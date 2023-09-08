@@ -1,3 +1,5 @@
+#include "hash_tables.h"
+
 /**
  * hash_table_set - Store data in the hash table
  * @ht: A pointor to hash table struct
@@ -9,10 +11,10 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int index;
-	hash_node_t * node = NULL;
+	hash_node_t *node = NULL;
 
 
-	index = key_index(key, ht->size);
+	index = key_index((const unsigned char *)key, ht->size);
 	node = ht->array[index];
 	while (node != NULL)
 	{
@@ -23,15 +25,15 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		}
 		node = node->next;
 	}
-
-	if (node = malloc(sizeof(hash_node_t) + strlen(key) + 1) == NULL)
+	node = malloc(sizeof(hash_node_t) + strlen(key) + 1);
+	if (node  == NULL)
 	{
 		return (0);
 	}
 	strcpy(node->key, key);
 	node->value = strdup(value);
 
-	//Add node at the beginning of linked list
+	/*Add node at the beginning of linked list*/
 	node->next = ht->array[index];
 	ht->array[index] = node;
 
@@ -39,3 +41,4 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 
 }
+

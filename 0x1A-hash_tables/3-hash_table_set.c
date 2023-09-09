@@ -14,13 +14,20 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *node = NULL;
 
 
+	if (ht == NULL || key == NULL || *key == '\0' || value == NULL)
+		return (0);
+
 	index = key_index((const unsigned char *)key, ht->size);
 	node = ht->array[index];
+	dup = strdup(value);
+	if (dup == NULL)
+		return (0);
 	while (node != NULL)
 	{
 		if (!strcmp(node->key, key))
 		{
-			node->value = strdup(value);
+			free(node->value);
+			node->value = dup;
 			return (1);
 		}
 		node = node->next;
@@ -31,7 +38,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (0);
 	}
 	strcpy(node->key, key);
-	node->value = strdup(value);
+	node->value = dup;
 
 	/*Add node at the beginning of linked list*/
 	node->next = ht->array[index];

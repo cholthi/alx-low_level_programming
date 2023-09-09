@@ -36,9 +36,10 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	node = malloc(sizeof(hash_node_t) + strlen(key) + 1);
 	if (node  == NULL)
 	{
+		free(dup);
 		return (0);
 	}
-	strcpy(node->key, key);
+	node->key = strdup(key);
 	node->value = dup;
 
 	/*Add node at the beginning of linked list*/
